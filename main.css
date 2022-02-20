@@ -1,0 +1,89 @@
+/* univesal selections */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Source Code Pro', monospace;
+}
+
+/*======= navbar====== */
+.bg{
+    background: #077cb3;
+}
+.main-navbar-light{
+    background: transparent!important;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    top: 10px;
+
+}
+/*======= End of navbar====== */
+
+/*======= img section ====== */
+.img-wrap{
+    width: 100%;
+    height: 850px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: 0;
+}
+
+/* to reduce the brightness, use overlay method */
+/* .img-wrap .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    opacity: .5;
+    background: #077cb3;
+    height: 850px;
+
+} */
+.img-wrap .main-text{
+    height: 800px!important;
+    
+}
+.main-text h1{
+    font-size: 60px;
+    color: #fff;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+.main-text p{
+    line-height: 1.5;
+    color: #fff;
+}
+
+.btn-img{
+    background:rgba(255, 255, 255, 0.514)!important;
+    color: #fff!important;
+    margin-right: 5px;
+    margin-left: 5px;
+    animation: skew 3s infinite;
+    animation-direction: normal;
+    transform: skew(20deg);
+    animation-direction: alternate;
+    padding: 5px 17px;
+
+}
+
+/* to add animations. note that animation name is skew from btn-img style */
+
+@keyframes skew{
+    0%{
+        transform: skewX(20deg);
+    }
+    100%{
+        transform: skewX(-20deg);
+    }
+} 
+/*======= End of img section ====== */
